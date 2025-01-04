@@ -3,6 +3,7 @@
 
 @{
     ViewData["Title"] = "Log in";
+    var role = Request.Query["role"];
 }
 
 <!DOCTYPE html>
@@ -77,6 +78,14 @@
 </head>
 <body>
     <div class="content">
+        <!-- Uyarı mesajı -->
+        @if (role == "Ogrenci")
+        {
+            <div class="alert alert-info" role="alert">
+                Sevgili öğrencilerimiz; Sisteme ilk kez giriş yapacaksanız kayıt oluşturulması için "Bölüm sekreteri" ile iletişime geçmeniz gerekmektedir.
+            </div>
+        }
+
         <h1>@ViewData["Title"]</h1>
         <div class="form-container">
             <form id="account" method="post">

@@ -1,0 +1,15 @@
+﻿
+<h1>Yeni Öğrenci Ekle</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="NAME">Ad Soyad</label>
+        <input type="text" class="form-control" id="NAME" name="NAME" required />
+    </div>
+    <div class="form-group">
+        <label for="MAJOR">Bölüm</label>
+        <input type="text" class="form-control" id="MAJOR" name="MAJOR" required />
+    </div>
+    <!-- Diğer alanlar burada -->
+    <button type="submit" class="btn btn-primary">Ekle</button>
+</form>
