@@ -1,0 +1,13 @@
+﻿@page
+@model OgrenciYonetimSistemi.Views.Role.SelecetRoleModel
+@{
+}
+
+<p>Lütfen devam etmek için seçiniz:</p>
+<div class="role-selection">
+    <form method="get" action="/Identity/Account/Login">
+        <button type="submit" name="role" value="Ogrenci" class="btn btn-primary btn-lg">Öğrenci Girişi</button>
+        <button type="submit" name="role" value="Sekreter" class="btn btn-secondary btn-lg">Sekreter Girişi</button>
+    </form>
+</div>
+
